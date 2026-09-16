@@ -31,6 +31,6 @@ jobs:
     steps:
       - name: Restart App
         run: |
-          docker stop backend-prod || true
-          docker rm backend-prod || true
-          docker run -d --name backend-prod -p 3000:3000 github-action-ci-cd
+          docker stop index || true
+          docker rm index || true
+          docker run -d --name index -p 3000:3000 github-action-ci-cd
